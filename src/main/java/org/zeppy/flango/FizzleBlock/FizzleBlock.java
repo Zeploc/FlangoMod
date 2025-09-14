@@ -65,6 +65,8 @@ public class FizzleBlock extends BlockWithEntity {
                 if (primed_count >= PRIMES_REQUIRED) {
                     world.playSound(null, pos, SoundEvents.BLOCK_NOTE_BLOCK_PLING.value(), SoundCategory.BLOCKS, 1f, 1f);
                     player.sendMessage(Text.literal("Fully primed!"), true);
+                    // Confirm primed
+                    world.setBlockState(pos, state.with(PRIMED, true));
                     return ActionResult.PASS;
                 }
 
@@ -80,7 +82,7 @@ public class FizzleBlock extends BlockWithEntity {
                         1f, percent);
                 if (primed_count == PRIMES_REQUIRED) {
                     world.playSound(null, pos, SoundEvents.BLOCK_NOTE_BLOCK_BELL.value(), SoundCategory.BLOCKS, 1f, 1f);
-                    newBlockState.with(PRIMED, true);
+                    newBlockState = newBlockState.with(PRIMED, true);
                 }
                 world.setBlockState(pos, newBlockState);
 
