@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "stuff",
+  "ingredients": [
+    "minecraft:dirt",
+    "minecraft:dirt",
+    "minecraft:dirt",
+    "flango:suspicious_substance",
+    "flango:suspicious_substance"
+  ],
+  "result": {
+    "id": "flango:fizzle_block",
+    "count": 3
+  }
+}

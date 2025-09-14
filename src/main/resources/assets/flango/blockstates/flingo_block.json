@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "flango:block/flingo_block"
+    }
+  }
+}

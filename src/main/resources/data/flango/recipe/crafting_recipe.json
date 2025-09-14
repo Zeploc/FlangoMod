@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    " S ",
+    "MXP"
+  ],
+  "key": {
+    "#": "minecraft:dark_oak_planks",
+    "S": "minecraft:stripped_cherry_log",
+    "M": "minecraft:mangrove_wood",
+    "X": "minecraft:stone_button",
+    "P": "minecraft:stone_pressure_plate"
+  },
+  "result": {
+    "id": "flango:fizzle_block",
+    "count": 99
+  }
+}
+

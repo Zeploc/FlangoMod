@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "primed=false": {
+      "model": "flango:block/fizzle_block"
+    },
+    "primed=true": {
+      "model": "flango:block/fizzle_block_primed"
+    }
+  }
+}

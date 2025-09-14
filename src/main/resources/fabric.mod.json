@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "flango",
+  "version": "${version}",
+  "name": "Flango",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/flango/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.zeppy.flango.client.FlangoDataGenerator"
+    ],
+    "client": [
+      "org.zeppy.flango.client.FlangoClient"
+    ],
+    "main": [
+      "org.zeppy.flango.core.FlangoMod"
+    ]
+  },
+  "mixins": [
+    "flango.mixins.json",
+    {
+      "config": "flango.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
